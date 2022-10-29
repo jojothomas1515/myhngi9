@@ -1,14 +1,16 @@
 import React from "react";
+import '../styles/Home.css'
 
 function Home(props) {
     return (
-        <div>
+        <div className={'container'}>
             <div className="profile__info">
                 <div className="profile_img_con"><img id={'profile__img'} src={require('../assets/48474390.jpeg')}
                                                       alt="profile_img"/>
-                    <h4 id={'twitter'}>Joseph Thomas</h4>
-                    <h4 id="slack">Joseph Thomas Ehigie</h4>
                 </div>
+                <h4 id={'twitter'}>Joseph Thomas</h4>
+                <h4 id="slack">Joseph Thomas Ehigie</h4>
+
             </div>
 
             <div className="link_section">

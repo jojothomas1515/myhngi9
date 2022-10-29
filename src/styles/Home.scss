@@ -1,0 +1,24 @@
+.container{
+  padding: 1rem;
+
+
+
+  .profile__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    #slack{
+      visibility: hidden;
+    }
+    #twtter{
+
+    }
+    img{
+      width: 100px;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+    }
+  }
+}
