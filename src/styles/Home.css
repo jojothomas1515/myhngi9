@@ -13,6 +13,8 @@
   width: 100px;
   aspect-ratio: 1/1;
   object-fit: cover;
+  border: 1px solid #61dafb;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=Home.css.map */
