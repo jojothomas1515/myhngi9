@@ -23,6 +23,7 @@ function Home(props) {
                     Books</a>
                 <a id={'pitch'} href={'https://background.zuri.team/'}>Background Check for Coders</a>
                 <a id={'book_design'} href={'https://books.zuri.team/design-rules'}>Design Books</a>
+                {/*<a id={"contact"} >Contact Me</a>*/}
             </div>
             <div className="socials">
                 <a href="https://hng9.slack.com/archives/D0488U5612R" className="slack"><img
