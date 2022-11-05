@@ -1,5 +1,8 @@
 import React from "react";
 import '../styles/Home.css'
+// react-router-dom
+import {Form, Link} from "react-router-dom";
+import Footer from "../components/Footer";
 
 function Home(props) {
     return (
@@ -23,7 +26,7 @@ function Home(props) {
                     Books</a>
                 <a id={'pitch'} href={'https://background.zuri.team/'}>Background Check for Coders</a>
                 <a id={'book_design'} href={'https://books.zuri.team/design-rules'}>Design Books</a>
-                {/*<a id={"contact"} >Contact Me</a>*/}
+                <Link id={'contact'} to={'/contact'}>Contact Me</Link>
             </div>
             <div className="socials">
                 <a href="https://hng9.slack.com/archives/D0488U5612R" className="slack"><img
@@ -31,13 +34,7 @@ function Home(props) {
                 <a href="https://github.com/jojothomas1515" className="git"><img src={require('../assets/Icongit.png')}
                                                                                  alt="git"/></a>
             </div>
-            <footer>
-                <div className={'foot_con'}>
-                    <img src={require('../assets/Zuri.Internship_Logo.png')} alt="" className="logo"/>
-                    <p className={'text-secondary'}>HNG Internship 9 Frontend Task</p>
-                    <img src={require('../assets/I4G.png')} alt="" className="logo"/>
-                </div>
-            </footer>
+            <Footer/>
         </div>
     );
 }
