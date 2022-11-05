@@ -1,14 +1,15 @@
-.container {
+.container__contact {
   display: flex;
   padding-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 @media screen and (min-width: 700px) {
-  .container {
+  .container__contact {
     height: 100vh;
     padding-bottom: 0;
   }
 }
-.container #form__container {
+.container__contact #form__container {
   margin-top: 50px;
   justify-self: center;
   display: grid;
@@ -21,7 +22,7 @@
   padding: 1rem 1rem;
 }
 @media screen and (min-width: 700px) {
-  .container #form__container {
+  .container__contact #form__container {
     margin: auto auto;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(5, 1fr);
@@ -31,60 +32,67 @@
     height: 80% !important;
     grid-template-areas: "cm cm" "fn ln" "em em" "msg msg" "ckb ckb" "btn btn";
   }
-  .container #form__container .cm {
+  .container__contact #form__container .cm {
     grid-area: cm;
   }
-  .container #form__container .fn {
+  .container__contact #form__container .fn {
     grid-area: fn;
   }
-  .container #form__container .ln {
+  .container__contact #form__container .ln {
     grid-area: ln;
   }
-  .container #form__container .em {
+  .container__contact #form__container .em {
     grid-area: em;
   }
-  .container #form__container .msg {
+  .container__contact #form__container .msg {
     grid-area: msg;
   }
-  .container #form__container .ckb {
+  .container__contact #form__container .ckb {
     grid-area: ckb;
   }
-  .container #form__container .btn {
+  .container__contact #form__container .btn {
     grid-area: btn;
   }
 }
-.container #form__container > div:first-child {
+.container__contact #form__container > div:first-child {
   margin-bottom: 2rem;
 }
-.container #form__container > div:first-child h1 {
+.container__contact #form__container > div:first-child h1 {
   margin-bottom: 1rem;
 }
-.container label {
+.container__contact label {
   display: flex;
   flex-direction: column;
   height: max-content;
   gap: 0.5rem;
 }
-.container label > input[type=text], .container label > input[type=email] {
+.container__contact label > input[type=text], .container__contact label > input[type=email] {
   padding: 10px 14px;
 }
-.container label input, .container label textarea {
+.container__contact label input, .container__contact label textarea {
   border-radius: 5px;
   border: 1px solid #D0D5DD;
   padding: 12px 14px 12px 14px;
   font-size: 16px;
 }
-.container label#agree {
+.container__contact label#agree {
   flex-direction: row;
   align-items: start;
   gap: 10px;
 }
-.container #btn__submit {
+.container__contact #btn__submit {
   border-radius: 8px;
   padding: 12px 20px 12px 20px;
   background: #1570EF;
   color: #ffffff;
   font-size: 16px;
+  transition-property: background-color, translate, box-shadow;
+  transition: 150ms ease-in, 150ms ease-in;
+}
+.container__contact #btn__submit:hover {
+  box-shadow: 0px 2px 2px 0px #667085;
+  translate: 0 -2px;
+  background-color: #0d59c4;
 }
 
 .err {

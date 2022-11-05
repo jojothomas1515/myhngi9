@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 
 function Home(props) {
     return (
+        <>
         <div className={'container'}>
             <div className="profile__info">
                 <img id={'profile__img'} src={require('../assets/48474390.jpeg')}
@@ -34,8 +35,9 @@ function Home(props) {
                 <a href="https://github.com/jojothomas1515" className="git"><img src={require('../assets/Icongit.png')}
                                                                                  alt="git"/></a>
             </div>
-            <Footer/>
         </div>
+            <Footer/>
+    </>
     );
 }
 

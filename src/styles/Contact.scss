@@ -1,6 +1,7 @@
-.container {
+.container__contact {
   display: flex;
   padding-bottom: 1rem;
+  margin-bottom: 3rem;
   @media screen and (min-width: 700px) {
     height: 100vh;
     padding-bottom: 0;
@@ -100,11 +101,19 @@
     background: #1570EF;
     color: #ffffff;
     font-size: 16px;
+    transition-property: background-color, translate, box-shadow;
+    transition: 150ms ease-in, 150ms ease-in;
+
+    &:hover {
+      box-shadow: 0px 2px 2px 0px #667085;
+      translate: 0 -2px;
+      background-color: darken(#1570EF, 10);
+    }
 
 
   }
 }
 
-.err{
+.err {
   border: 2px solid red !important;
 }
